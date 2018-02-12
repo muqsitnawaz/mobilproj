@@ -11,6 +11,6 @@ for i in `seq 1 11`; do
   ts+="-channel"
   ts+=$i
   ts+=".pcapng"
-  tshark -i wlp6s0mon -I -a duration:10 -w $ts
+  tshark -i wlp6s0mon -I -a duration:120 -w $ts
   echo "Done capturing on channel"
 done
